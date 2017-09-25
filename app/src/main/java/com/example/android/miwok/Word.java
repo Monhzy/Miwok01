@@ -11,17 +11,21 @@ public class Word{
     private String mMiwok;
     private int NO_IMAGE_PROVIDED = -1;
     private int mImageResiurceId = NO_IMAGE_PROVIDED;
+    private int mMusicResourceId ;
 
 
-    public Word(String English,String Miwok){
+    public Word(String English,String Miwok,int MusicResourceId){
         mEnglish = English;
         mMiwok = Miwok;
+        mMusicResourceId = MusicResourceId;
 
     }
-    public Word(String English,String Miwok,int ImageResiurceId){
+    public Word(String English,String Miwok,int ImageResiurceId,int MusicResourceId){
         mEnglish = English;
         mMiwok = Miwok;
         mImageResiurceId = ImageResiurceId;
+        mMusicResourceId = MusicResourceId;
+
     }
 
     public String getmEnglish(){
@@ -33,5 +37,5 @@ public class Word{
     public boolean hasImage(){
         return mImageResiurceId!=NO_IMAGE_PROVIDED;
     }
-
+    public int getMusicResourceId(){return mMusicResourceId;}
 }

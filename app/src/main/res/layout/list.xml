@@ -42,6 +42,7 @@
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:textAppearance="?android:textAppearanceMedium"/>
+
         </LinearLayout>
 
 </LinearLayout>
